@@ -93,25 +93,33 @@ nav img {
 }
 @media (min-width: 1024px) {
   .hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    text-align: left;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  text-align: left;
+}
 
-  .hero-text {
-    max-width: 500px;
-  }
+.hero-text {
+  max-width: 500px;
+}
 
-  .hero img {
-    width: 420px;
-  }
-  .feature-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
+.hero img {
+  width: 420px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.extra-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
 .features article {
     background-color: #282828;
     padding: 20px;
