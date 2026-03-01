@@ -127,6 +127,15 @@ nav img {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+.nav-toggle {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
 }
 .extra article {
     background-color: #282828;
@@ -147,4 +156,31 @@ nav a:hover {
 .features article,
 .extra article {
     transition: transform 0.2s ease;
+}
+@media (min-width: 768px) {
+  main {
+    padding: 60px 40px;
+  }
+
+  .hero img {
+    width: 360px;
+  }
+}
+.nav-toggle {
+  background: transparent;
+  border: none;
+  color: var(--color-text-primary);
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: none; /* oculto en móvil */
+}
+
+.nav-links.is-open {
+  display: flex; 
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
 }
